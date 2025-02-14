@@ -16,20 +16,34 @@
         border: 2px solid black;
         margin: auto;
       }
+
+      .odd > .cell:nth-child(2n + 1) {
+        background-color: #f7a072;
+      }
+      .odd > .cell:nth-child(2n) {
+        background-color: #762105;
+      }
+
+      .even > .cell:nth-child(2n + 1) {
+        background-color: #762105;
+      }
+      .even > .cell:nth-child(2n) {
+        background-color: #f7a072;
+      }
     </style>
   </head>
   <body>
     <h1 style="text-align: center; margin-bottom: 10px">Chess Board</h1>
     <div class="main">
-      <div>
-        <div style="background-color: #f7a072" class="cell">
+      <div class="odd">
+        <div class="cell">
           <img
             src="assets/whitePieces/rook.png"
             alt="rook"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/horse.png"
             alt="horse"
@@ -37,42 +51,42 @@
           />
         </div>
 
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/bishop.png"
             alt="bishop"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/king.png"
             alt="king"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/queen.png"
             alt="queen"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/bishop.png"
             alt="bishop"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/horse.png"
             alt="horse"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/rook.png"
             alt="rook"
@@ -80,57 +94,57 @@
           />
         </div>
       </div>
-      <div>
-        <div style="background-color: #762105" class="cell">
+      <div class="even">
+        <div class="cell">
           <img
             src="assets/whitePieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/whitePieces/pawn.png"
             alt="pawn"
@@ -138,97 +152,97 @@
           />
         </div>
       </div>
-      <div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
+      <div class="odd">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
       </div>
-      <div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
+      <div class="even">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
       </div>
-      <div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
+      <div class="odd">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
       </div>
-      <div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
-        <div style="background-color: #762105" class="cell"></div>
-        <div style="background-color: #f7a072" class="cell"></div>
+      <div class="even">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
       </div>
-      <div>
-        <div style="background-color: #f7a072" class="cell">
+      <div class="odd">
+        <div class="cell">
           <img
             src="assets/blackPieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/pawn.png"
             alt="pawn"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/pawn.png"
             alt="pawn"
@@ -236,15 +250,15 @@
           />
         </div>
       </div>
-      <div>
-        <div style="background-color: #762105" class="cell">
+      <div class="even">
+        <div class="cell">
           <img
             src="assets/blackPieces/rook.png"
             alt="rook"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/horse.png"
             alt="horse"
@@ -252,42 +266,42 @@
           />
         </div>
 
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/bishop.png"
             alt="bishop"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/queen.png"
             alt="king"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/king.png"
             alt="queen"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/bishop.png"
             alt="bishop"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #762105" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/horse.png"
             alt="horse"
             style="width: 60px; height: 60px; margin: 20px"
           />
         </div>
-        <div style="background-color: #f7a072" class="cell">
+        <div class="cell">
           <img
             src="assets/blackPieces/rook.png"
             alt="rook"
